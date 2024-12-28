@@ -1,4 +1,11 @@
-import { Controller } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
+import { ApiPkmService } from './api-pkm.service';
 
-@Controller('api-pkm')
-export class ApiPkmController {}
+@Controller()
+export class ApiPkmController {
+    constructor(private readonly apipkmservice: ApiPkmService) {}
+
+    
+
+
+}
